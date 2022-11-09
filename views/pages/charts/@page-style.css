@@ -1,0 +1,41 @@
+/* some styling for chartist chart */
+
+.ct-chart > svg {
+    position: relative !important;
+}
+.ct-chart::before, .ct-chart::after {
+    display: none !important;
+}
+
+.ct-series-a .ct-line, .ct-series-a .ct-point {
+    stroke: transparent;
+}
+
+.ct-series-a .ct-area, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-slice-pie {
+    fill: #de88af;
+    fill-opacity: 0.75;
+}
+
+.ct-series-b .ct-line, .ct-series-b .ct-point {
+    stroke: transparent;
+}
+
+.ct-series-b .ct-area, .ct-series-b .ct-slice-donut-solid, .ct-series-b .ct-slice-pie {
+    fill: #55c0f6;
+    fill-opacity: 0.75;
+}
+
+.ct-grid {
+    stroke: rgba(221, 186, 206, 0.93);
+    stroke-dasharray: 0;
+}
+
+
+.ct-series-c .ct-line, .ct-series-c .ct-point {
+    stroke: transparent;
+}
+
+.ct-series-c .ct-area, .ct-series-c .ct-slice-donut-solid, .ct-series-c .ct-slice-pie {
+    fill: #f6cb55;
+    fill-opacity: 0.75;
+}

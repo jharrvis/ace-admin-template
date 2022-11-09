@@ -1,0 +1,28 @@
+/* latin */
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Kanit Regular"), local("Kanit-Regular"),  url("../../assets/fonts/Kanit/Kanit-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Kanit Light"), local("Kanit-Light"),  url("../../assets/fonts/Kanit/Kanit-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Kanit SemiBold"), local("Kanit-SemiBold"),  url("../../assets/fonts/Kanit/Kanit-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Kanit';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Kanit Bold"), local("Kanit-Bold"), url("../../assets/fonts/Kanit/Kanit-Bold.woff") format("woff");
+}

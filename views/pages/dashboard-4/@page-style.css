@@ -1,0 +1,64 @@
+.conversation .media-body {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.conversation:nth-child(2n) .media > .d-flex {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.conversation:nth-child(2n) .media-body {
+    border-radius: 1rem 1rem 2px 1rem;
+}
+.conversation:nth-child(2n + 1) .media-body {
+    border-radius: 1rem 1rem 1rem 2px;
+}
+.conversation:nth-child(2n) .avatar {
+    margin-left: 0.5rem;
+}
+.conversation:nth-child(2n + 1) .avatar {
+    margin-right: 0.5rem;
+}
+
+.rtl .conversation:nth-child(2n) .media-body {
+    border-radius: 1rem 1rem 1rem 2px;
+}
+.rtl .conversation:nth-child(2n + 1) .media-body {
+    border-radius: 1rem 1rem 2px 1rem;
+}
+.rtl .conversation:nth-child(2n) .avatar {
+    margin-right: 0.5rem;
+}
+.rtl .conversation:nth-child(2n + 1) .avatar {
+    margin-left: 0.5rem;
+}
+
+
+
+.piechart-legends ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 0.925rem;
+}
+.piechart-legends ul li {
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+.piechart-legends span {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 1px;
+    width: 0.625rem;
+    height: 0.625rem;
+    margin-right: 0.5rem;
+}
+
+.rtl .piechart-legends ul {
+    margin-right: 0;
+    padding-right: 0;
+}
+.rtl .piechart-legends span {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}

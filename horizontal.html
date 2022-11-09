@@ -1,0 +1,1796 @@
+<!doctype html>
+<html lang="en">
+
+  
+<!-- Mirrored from www.xn--b3c3da.com/haclc/horizontal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 02:08:01 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <base #href="" />
+
+    <title>Horizontal Menu - Ace Admin</title>
+
+    <!-- include common vendor stylesheets & fontawesome -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/solid.css">
+
+
+
+    <!-- include vendor stylesheets used in "Horizontal Menu" page. see "/views//pages/partials/horizontal/@vendor-stylesheets.hbs" -->
+    <link rel="stylesheet" type="text/css" href="node_modules/fullcalendar/main.css">
+
+
+    <!-- include fonts -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-font.css">
+
+
+
+    <!-- ace.css -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace.css">
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- "Horizontal Menu" page styles, specific to this page for demo only -->
+    <link rel="stylesheet" type="text/css" href="views/pages/horizontal/%40page-style.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-themes.css">
+
+  </head>
+
+  <body>
+    <div class="body-container">
+      <nav class="navbar navbar-sm navbar-fixed-xl navbar-expand-lg navbar-white">
+        <div class="navbar-inner shadow-md">
+          <div class="container container-plus">
+
+
+            <div class="navbar-intro justify-content-xl-start bgc-transparent pr-lg-3 w-auto">
+
+              <button type="button" class="btn btn-burger burger-arrowed static collapsed ml-2 d-flex d-xl-none btn-h-white" data-toggle-mobile="sidebar" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle sidebar">
+                <span class="bars text-dark-tp5"></span>
+              </button><!-- mobile sidebar toggler button -->
+
+              <button type="button" class="btn btn-burger burger-compact align-self-center ml-2 d-none d-xl-flex btn-h-light-primary" data-toggle="sidebar" data-toggle-class="collapsed-h" data-target="#sidebar" aria-controls="sidebar" aria-expanded="true" aria-label="Toggle sidebar">
+                <span class="bars text-dark-tp5"></span>
+              </button><!-- sidebar toggler button -->
+
+              <a class="navbar-brand text-dark-l1 ml-lg-1" href="#">
+                <i class="fa fa-leaf text-success"></i>
+                <span>Ace</span>
+                <span>App</span>
+              </a><!-- /.navbar-brand -->
+
+            </div><!-- /.navbar-intro -->
+
+
+            <!-- breadcrumbs -->
+            <div class="navbar-content d-none d-xl-flex">
+              <ol class="breadcrumb pl-2 ml-3">
+                <li class="breadcrumb-item"><a class="text-dark-l1" href="#">Mega</a></li>
+                <li class="breadcrumb-item active text-dark-l4">Horizontal Menu</li>
+              </ol>
+            </div>
+
+
+            <div class="navbar-content flex-grow-0 ml-auto">
+              <button type="button" id="id-nav-post-btn" class="btn btn-sm px-2 btn-outline-grey btn-h-outline-green btn-h-text-grey btn-a-outline-green btn-bold btn-brc-tp mx-lg-2">
+                <i class="fa fa-plus bgc-green radius-round w-3 h-3 text-center mr-lg-1 text-white pt-15 text-95"></i>
+                <span class="d-none d-lg-inline">Create New</span>
+              </button>
+            </div>
+
+
+            <!-- mobile #navbarMenu toggler button -->
+            <button class="navbar-toggler ml-1 mr-2 px-1" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navbar menu">
+              <span class="pos-rel">
+                  <img class="radius-3px mr-1 brc-grey-m2 border-1" width="36" src="assets/image/avatar/avatar6.jpg" alt="Jason's Photo">
+                  <span class="badge badge-dot bgc-orange-d1 position-tr mr-1px mt-n1"></span>
+              </span>
+            </button>
+
+
+            <div class="navbar-menu collapse navbar-collapse navbar-backdrop" id="navbarMenu">
+
+              <div class="navbar-nav">
+                <ul class="nav nav-compact has-active-border">
+
+                  <li class="nav-item dropdown dropdown-mega">
+                    <a class="nav-link dropdown-toggle px-lg-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-bell text-110 icon-animated-bell mr-lg-2"></i>
+
+                      <span class="d-inline-block d-lg-none ml-2">Notifications</span><!-- show only on mobile -->
+                      <span class="d-none d-lg-block badge badge-dot bgc-danger position-tr mt-3 mr-35"></span>
+                      <span class="d-lg-none w-1 h-1 radius-round bgc-danger ml-2"></span>
+
+                      <i class="caret fa fa-angle-left d-block d-lg-none ml-auto"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-sm dropdown-animated p-0 bgc-white brc-primary-m3 border-b-2 shadow">
+                      <ul class="nav nav-tabs nav-tabs-simple w-100 nav-justified dropdown-clickable border-b-1 brc-secondary-l2" role="tablist">
+                        <li class="nav-item">
+                          <a class="d-style px-0 mx-0 py-3 nav-link active text-600 brc-blue-m1 text-dark-tp5 bgc-h-blue-l4" data-toggle="tab" href="#navbar-notif-tab-1" role="tab">
+                            <span class="d-active text-blue-d1 text-105">Notifications</span>
+                            <span class="d-n-active">Notifications</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="d-style px-0 mx-0 py-3 nav-link text-600 brc-purple-m1 text-dark-tp5 bgc-h-purple-l4" data-toggle="tab" href="#navbar-notif-tab-2" role="tab">
+                            <span class="d-active text-purple-d1 text-105">Messages</span>
+                            <span class="d-n-active">Messages</span>
+                          </a>
+                        </li>
+                      </ul><!-- .nav-tabs -->
+
+
+                      <div class="tab-content tab-sliding p-0">
+
+                        <div class="tab-pane mh-none show active px-md-1 pt-1" id="navbar-notif-tab-1" role="tabpanel">
+
+                          <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                            <i class="fab fa-twitter bgc-blue-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                            <span class="text-muted">Followers</span>
+                            <span class="float-right badge badge-danger radius-round text-80">- 4</span>
+                          </a>
+                          <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                            <i class="fa fa-comment bgc-pink-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                            <span class="text-muted">New Comments</span>
+                            <span class="float-right badge badge-info radius-round text-80">+12</span>
+                          </a>
+                          <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                            <i class="fa fa-shopping-cart bgc-success-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                            <span class="text-muted">New Orders</span>
+                            <span class="float-right badge badge-success radius-round text-80">+8</span>
+                          </a>
+                          <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                            <i class="far fa-clock bgc-purple-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                            <span class="text-muted">Finished processing data!</span>
+                          </a>
+
+                          <hr class="mt-1 mb-1px brc-secondary-l2" />
+                          <a href="#" class="mb-0 py-3 border-0 list-group-item text-blue text-uppercase text-center text-85 font-bolder">
+                            See All Notifications
+                            <i class="ml-2 fa fa-arrow-right text-muted"></i>
+                          </a>
+
+                        </div><!-- .tab-pane : notifications -->
+
+
+                        <div class="tab-pane mh-none pl-md-2" id="navbar-notif-tab-2" role="tabpanel">
+                          <div data-ace-scroll='{"ignore": "mobile", "height": 300, "smooth":true}'>
+                            <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <img alt="Alex's avatar" src="assets/image/avatar/avatar.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                              <div>
+                                <span class="text-primary-m1 font-bolder">Alex:</span>
+                                <span class="text-grey text-90">Ciao sociis natoque penatibus et auctor ...</span>
+                                <br />
+                                <span class="text-grey-m1 text-85">
+                                                  <i class="far fa-clock"></i>
+                                                  a moment ago
+                                              </span>
+                              </div>
+                            </a>
+                            <hr class="my-1px brc-grey-l3" />
+                            <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <img alt="Susan's avatar" src="assets/image/avatar/avatar3.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                              <div>
+                                <span class="text-primary-m1 font-bolder">Susan:</span>
+                                <span class="text-grey text-90">Vestibulum id ligula porta felis euismod ...</span>
+                                <br />
+                                <span class="text-grey-m1 text-85">
+                                                  <i class="far fa-clock"></i>
+                                                  20 minutes ago
+                                              </span>
+                              </div>
+                            </a>
+                            <hr class="my-1px brc-grey-l3" />
+                            <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <img alt="Bob's avatar" src="assets/image/avatar/avatar4.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                              <div>
+                                <span class="text-primary-m1 font-bolder">Bob:</span>
+                                <span class="text-grey text-90">Nullam quis risus eget urna mollis ornare ...</span>
+                                <br />
+                                <span class="text-grey-m1 text-85">
+                                                  <i class="far fa-clock"></i>
+                                                  3:15 pm
+                                              </span>
+                              </div>
+                            </a>
+                            <hr class="my-1px brc-grey-l3" />
+                            <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <img alt="Kate's avatar" src="assets/image/avatar/avatar2.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                              <div>
+                                <span class="text-primary-m1 font-bolder">Kate:</span>
+                                <span class="text-grey text-90">Ciao sociis natoque eget urna mollis ornare ...</span>
+                                <br />
+                                <span class="text-grey-m1 text-85">
+                                                  <i class="far fa-clock"></i>
+                                                  1:33 pm
+                                              </span>
+                              </div>
+                            </a>
+                            <hr class="my-1px brc-grey-l3" />
+                            <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <img alt="Fred's avatar" src="assets/image/avatar/avatar5.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                              <div>
+                                <span class="text-primary-m1 font-bolder">Fred:</span>
+                                <span class="text-grey text-90">Vestibulum id penatibus et auctor  ...</span>
+                                <br />
+                                <span class="text-grey-m1 text-85">
+                                                  <i class="far fa-clock"></i>
+                                                  10:09 am
+                                              </span>
+                              </div>
+                            </a>
+
+                          </div><!-- ace-scroll -->
+
+                          <hr class="my-1px brc-secondary-l2 border-double" />
+                          <a href="page-inbox.html" class="mb-0 py-3 border-0 list-group-item text-purple text-uppercase text-center text-85 font-bolder">
+                            See All Messages
+                            <i class="ml-2 fa fa-arrow-right text-muted"></i>
+                          </a>
+                        </div><!-- .tab-pane : messages -->
+
+                      </div>
+                    </div>
+                  </li>
+
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link pl-lg-3 pr-lg-4 pos-rel">
+                      <i class="far fa-envelope text-110 icon-animated-vertical"></i>
+
+                      <span class="d-inline-block d-lg-none ml-2">Messages</span><!-- show only on mobile -->
+                      <span class="d-none d-lg-block text-600 text-orange-d3 text-85 position-tr mt-15 mr-2">+2</span>
+                      <span class="d-lg-none text-600 text-orange-d3 text-90 ml-2">(+2)</span>
+                    </a>
+                  </li>
+
+
+                  <li class="nav-item dropdown order-first order-lg-last dropdown-hover">
+                    <a class="nav-link dropdown-toggle px-lg-2 ml-lg-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img id="id-navbar-user-image" class="d-none d-lg-inline-block radius-3px mr-1 brc-grey-m2 border-1" src="assets/image/avatar/avatar6.jpg" height="42" alt="Jason's Photo">
+
+                      <span class="d-inline-block d-lg-none">Welcome, Jason</span><!-- show only on mobile -->
+
+                      <i class="caret fa fa-ellipsis-v d-none d-xl-block"></i>
+                      <i class="caret fa fa-angle-left d-block d-lg-none"></i>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-caret dropdown-menu-right brc-primary-m3">
+                      <div class="d-none d-lg-block">
+                        <div class="dropdown-header">
+                          Welcome, Jason
+                        </div>
+                        <div class="dropdown-divider"></div>
+                      </div>
+
+                      <a class="dropdown-item btn btn-outline-grey btn-h-light-blue btn-a-light-primblueary" href="page-profile.html">
+                        <i class="fa fa-user text-primary-m1 text-105 mr-1"></i>
+                        Profile
+                      </a>
+
+                      <a class="dropdown-item btn btn-outline-grey btn-h-light-green btn-a-light-green" href="#" data-toggle="modal" data-target="#id-ace-settings-modal">
+                        <i class="fa fa-cog text-success-m1 text-105 mr-1"></i>
+                        Settings
+                      </a>
+
+                      <div class="dropdown-divider brc-secondary-l2"></div>
+
+                      <a class="dropdown-item btn btn-outline-grey btn-h-light-orange btn-a-light-orange" href="page-login.html">
+                        <i class="fa fa-power-off text-orange-d2 text-105 mr-1"></i>
+                        Logout
+                      </a>
+                    </div>
+                  </li><!-- /.nav-item:last -->
+
+                </ul><!-- /.navbar-nav menu -->
+              </div><!-- /.navbar-nav -->
+
+            </div><!-- /.navbar-menu.navbar-collapse -->
+
+
+          </div><!-- /.container -->
+        </div><!-- /.navbar-inner -->
+      </nav>
+      <div id="sidebar" class="sidebar sidebar-fixed sidebar-hover sidebar-h sidebar-white sidebar-top" data-swipe="true" data-backdrop="true" data-dismiss="true">
+        <div class="sidebar-inner border-r-0 border-b-1 brc-secondary-l2 shadow-md">
+          <div class="container container-plus px-0 d-flex flex-column flex-xl-row">
+
+            <div class="flex-grow-1 d-xl-flex flex-xl-row ace-scroll" data-ace-scroll="{}">
+              <!-- ace-scroll is not applied in desktop view, but it's used in mobile view -->
+              <div class="sidebar-section">
+                <div class="sidebar-section-item fadeable-below fadeable-center px-3">
+
+                  <div class="fadeinable sidebar-shortcuts-mini w-auto" role="button">
+                    <div>
+                      <div>
+                        <span class="btn btn-success p-0"></span><span class="btn btn-info p-0"></span>
+                      </div>
+                      <div class="mt-n2">
+                        <span class="btn btn-info p-0"></span><span class="btn btn-success p-0"></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="fadeable flex-xl-column text-center">
+                    <div class="sub-arrow"></div>
+                    <div class="my-3">
+                      <button class="btn px-25 py-2 text-95 btn-outline-success border-b-2 radius-2">
+                        <i class="fa fa-signal"></i>
+                      </button>
+
+                      <button class="btn px-25 py-2 text-95 btn-outline-info border-b-2 radius-2">
+                        <i class="fa fa-edit"></i>
+                      </button>
+
+                      <button class="btn px-25 py-2 text-95 btn-outline-success border-b-2 radius-2">
+                        <i class="fa fa-users"></i>
+                      </button>
+
+                      <button class="btn px-25 py-2 text-95 btn-outline-info border-b-2 radius-2">
+                        <i class="fa fa-cogs"></i>
+                      </button>
+                    </div>
+
+                    <div class="d-flex align-items-center ml-3 ml-xl-0 my-3">
+                      <i class="fa fa-search mr-n3 text-info-m1"></i>
+                      <input type="text" class="sidebar-search-input pl-4 pr-3 mr-n2" maxlength="60" placeholder="Search ..." aria-label="Search" />
+                      <a href="#"><i class="fa fa-microphone text-muted ml-n1"></i></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <ul class="nav nav-spaced nav-fill text-center nav-active-sm has-active-border active-on-top">
+
+
+                <li class="nav-item-caption">
+                  <span class="fadeable pl-3">MAIN</span>
+                  <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                  <!--
+                			OR something like the following (with `.hideable` text)
+                		-->
+                  <!--
+                			<div class="hideable">
+                				<span class="pl-3">MAIN</span>
+                			</div>
+                			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                		-->
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="dashboard.html" class="nav-link">
+                    <i class="nav-icon fa fa-home"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Home</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item active open">
+
+                  <a href="#" class="nav-link dropdown-toggle">
+                    <i class="nav-icon fa fa-cube"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Mega</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse show">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-2.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Dashboard 2</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-3.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Dashboard 3</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-4.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Dashboard 4</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item active">
+
+                        <a href="horizontal.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Horizontal Menu</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="two-menus-1.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Two Menus</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="landing-page-1.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Landing Page 1</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="landing-page-2.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Landing Page 2</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="coming-soon.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Coming Soon</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-desktop"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Elements</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="buttons.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Buttons</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="button-groups.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Button Groups</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="alerts.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Alerts</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="modals.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Modals</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="asides.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Asides</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="tabs.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Tabs</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="accordions.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Accordions</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="tooltips.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Tooltips &amp; Popovers</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="badges.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Badges</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="pagination.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Pagination</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dropdowns.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Dropdowns</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="icons.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Icons</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="typography.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Typography</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="charts.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Charts</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="treeview.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Treeview</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="#" class="nav-link dropdown-toggle collapsed">
+
+                          <span class="nav-text">
+                				  <span>Nested Links</span>
+                          </span>
+
+                          <b class="caret fa fa-angle-left rt-n90"></b>
+
+                          <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                          <!--
+                				 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                				 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                				 -->
+                        </a>
+
+                        <div class=" submenu collapse">
+                          <ul class="submenu-inner">
+
+                            <li class="nav-item">
+
+                              <a href="#" class="nav-link dropdown-toggle collapsed">
+                                <i class="nav-icon fa fa-caret-right text-blue-l2 mr-2"></i>
+                                <span class="nav-text">
+                							  <span>Third Level Menu</span>
+                                </span>
+
+                                <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                <!--
+                							 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                							 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                							 -->
+                              </a>
+
+                              <div class=" submenu collapse">
+                                <ul class="submenu-inner">
+
+                                  <li class="nav-item">
+
+                                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                                      <i class="nav-icon fa fa-leaf text-success-l2 text-90 mr-2"></i>
+                                      <span class="nav-text">
+                										  <span>Fourth Level</span>
+                                      </span>
+
+                                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                      <!--
+                										 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                										 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                										 -->
+                                    </a>
+
+                                    <div class=" submenu collapse">
+                                      <ul class="submenu-inner">
+
+                                        <li class="nav-item">
+
+                                          <a href="#" class="nav-link">
+                                            <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                            <span class="nav-text">
+                													  <span>5th Level</span>
+                                            </span>
+
+
+                                          </a>
+
+
+                                        </li>
+
+
+                                        <li class="nav-item">
+
+                                          <a href="#" class="nav-link">
+                                            <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                            <span class="nav-text">
+                													  <span>5th Level</span>
+                                            </span>
+
+
+                                          </a>
+
+
+                                        </li>
+
+                                      </ul>
+                                    </div>
+
+                                    <b class="sub-arrow"></b>
+
+                                  </li>
+
+                                </ul>
+                              </div>
+
+                              <b class="sub-arrow"></b>
+
+                            </li>
+
+                          </ul>
+                        </div>
+
+                        <b class="sub-arrow"></b>
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-table"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Tables</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="table-basic.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Basic Tables</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-datatables.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>DataTables</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-bootstrap.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Bootstrap Table</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-jqgrid.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>jqGrid</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-edit"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Forms</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="form-basic.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Basic Elements</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-more.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>More Elements</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-wizard.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Wizard &amp; Validation</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-upload.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>File Upload</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-wysiwyg.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Wysiwyg &amp; Markdown</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="cards.html" class="nav-link">
+                    <i class="nav-icon far fa-window-restore"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Cards</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="calendar.html" class="nav-link">
+                    <i class="nav-icon far fa-calendar-alt"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Calendar</span>
+                    <span class="badge px-1 " title="2 Urgent Events"><i class='fas fa-exclamation-triangle text-140 text-danger-m1'></i></span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="gallery.html" class="nav-link">
+                    <i class="nav-icon far fa-image"></i>
+                    <span class="nav-text fadeable">
+                	  <span>Gallery</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+
+                <li class="nav-item-caption">
+                  <span class="fadeable pl-3">OTHER</span>
+                  <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                  <!--
+                			OR something like the following (with `.hideable` text)
+                		-->
+                  <!--
+                			<div class="hideable">
+                				<span class="pl-3">OTHER</span>
+                			</div>
+                			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                		-->
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-tag"></i>
+                    <span class="nav-text fadeable">
+                	  <span>More</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="page-profile.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Profile</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-login.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Login</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-pricing.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Pricing</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-invoice.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Invoice</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-inbox.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Inbox</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-search.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Search Results</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-error.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Error</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="starter.html" class="nav-link">
+
+                          <span class="nav-text">
+                				  <span>Starter</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="sidebar-section d-none d-xl-flex ml-xl-auto pl-xl-4">
+              <!-- the logout and settings button, only shown in desktop view -->
+              <div class="sidebar-section-item fadeable-below fadeable-center">
+                <div class="fadeinable w-auto">
+                  <a href="page-login.html" title="Logout" class="btn btn-outline-blue btn-brc-tp radius-3px py-2">
+                    <i class="fa fa-power-off text-140"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-section-item fadeable-below fadeable-center ml-xl-1">
+                <div class="fadeinable w-auto">
+                  <a href="#" title="Settings" class="btn btn-outline-warning btn-brc-tp radius-3px py-2" data-toggle="modal" data-target="#id-ace-settings-modal">
+                    <i class="fa fa-cog text-140"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-section d-xl-none ml-xl-auto">
+              <!-- sidebar footer, only show in mobile view -->
+              <div class="sidebar-section-item fadeable-left fadeable-top">
+                <div class="fadeinable">
+                  <button type="button" class="btn btn-primary btn-bold radius-1">
+                    <i class="fa fa-cloud"></i>
+                  </button>
+                </div>
+
+                <div id="sidebar-footer" class="fadeable text-center border-t-1 brc-secondary-l3 w-95">
+                  <div class="py-2">
+                    <button type="button" class="btn btn-primary px-5 btn-bold radius-1">
+                      Upgrade
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- .container -->
+        </div><!-- .sidebar-inner -->
+      </div>
+
+      <div class="main-container">
+
+        <div role="main" class="main-content">
+          <div class="page-content container container-plus px-md-4 px-xl-5">
+            <div class="page-header mt-2 pb-4 mx-lg-n2 border-0 justify-content-start flex-wrap flex-md-nowrap">
+              <h1 class="text-dark-m3 pb-0 mb-3 mb-md-0 text-130">
+                Horizontal Menu
+              </h1>
+
+              <div class="ml-2 d-none d-xl-inline-block">
+                <div class="dropdown dropdown-hover">
+                  <a data-display="static" href="#" class="mt-1 btn dropdown-toggle text-600 text-90 border-0 btn-outline-default py-1 px-2 btn-h-light-primary btn-a-light-primary radius-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    ( Click For Settings <i class="fa fa-cog text-110"></i> )
+                  </a>
+
+                  <form autocomplete="off" style="width: 18rem; max-width: 90vw;" class="dropdown-menu shadow pt-3 mr-lg-n2 dropdown-caret">
+                    <h3 class="pl-3 text-125 text-orange-d2 mb-1">
+                      Menu Options
+                    </h3>
+
+                    <div class="p-1 dropdown-clickable list-group">
+                      <label class="list-group-item px-3 py-2 mb-0 bgc-h-default-l3 border-0">
+                        <input type="checkbox" id="id-full-width" class="mr-1 align-sub" checked />
+                        Full Width
+                      </label>
+
+                      <label class="list-group-item px-3 py-2 mb-0 bgc-h-default-l3 border-0">
+                        <input type="checkbox" id="id-flip-highlight" class="mr-1 align-sub" />
+                        Flip Highlight Border
+                      </label>
+
+                      <label class="list-group-item px-3 py-2 mb-0 bgc-h-default-l3 border-0">
+                        <input type="checkbox" id="id-sm-highlight" class="mr-1 align-sub" checked />
+                        Smaller Highlight Border
+                      </label>
+                    </div>
+                  </form>
+                </div><!-- /.dropdown -->
+              </div>
+
+              <!-- search box -->
+              <div class="ml-auto d-flex">
+                <div class="d-flex align-items-center px-lg-0">
+                  <i class="fa fa-search text-blue mr-n3"></i>
+                  <input type="text" placeholder="Search ..." class="form-control brc-blue-m1 brc-on-focus border-none border-b-2 radius-0 shadow-none bgc-transparent pl-35 mr-1" />
+                </div>
+
+                <div class="text-right">
+                  <button class="btn btn-outline-secondary btn-bold radius-1 pl-0 py-0 text-nowrap">
+                    <span class="d-inline-block bgc-secondary-m3 shadow-sm h-4 px-2 pt-1 mr-15">
+                    <i class="fa fa-clipboard-check text-dark-tp5 text-110 mt-3px"></i>
+                </span>
+                    <span>
+                    <span class="d-none d-sm-inline">View </span>Report
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="row" id="infobox-row">
+              <div class="col-12 col-sm-6 col-lg-3 my-1 my-lg-0 px-sm-1 px-lg-0">
+                <div class="d-flex align-items-center bgc-green-d3 py-3" role="button">
+
+                  <div class="pos-rel p-3 bgc-white-tp8 radius-round ml-3 mr-3 shadow-md">
+                    <i class="pos-abs mt-n2px ml-n3px fa fa-dollar-sign text-dark-tp5 opacity-5 w-5 h-5 text-center pt-1 text-170"></i>
+                    <i class="pos-rel fa fa-dollar-sign text-white w-5 h-5 text-center pt-1 text-170"></i>
+                  </div>
+
+                  <div class="text-white">
+                    <div>
+                      <span class="text-160 text-600">$125,290</span>
+                      <i class="fa fa-arrow-up ml-2"></i>
+                    </div>
+                    <div class="text-uppercase text-85 text-600 letter-spacing">
+                      Revenue
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-12 col-sm-6 col-lg-3 my-1 my-lg-0 px-sm-1 px-lg-0">
+                <div class="d-flex align-items-center bgc-primary-d3 py-3 border-l-3 brc-white-tp2" role="button">
+
+                  <div class="pos-rel p-3 bgc-white-tp8 radius-round ml-3 mr-3 shadow-md">
+                    <i class="pos-abs mt-n1 ml-n1 fa fa-shopping-basket text-dark-tp5 opacity-5 w-5 h-5 text-center pt-1 text-170"></i>
+                    <i class="pos-rel fa fa-shopping-basket text-white w-5 h-5 text-center pt-1 text-170"></i>
+                  </div>
+
+                  <div class="text-white">
+                    <div>
+                      <span class="text-160 text-600">$23,500</span>
+                      <i class="fa fa-arrow-down ml-2"></i>
+                    </div>
+                    <div class="text-uppercase text-85 text-600 letter-spacing">
+                      Spendings
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-12 col-sm-6 col-lg-3 my-1 my-lg-0 px-sm-1 px-lg-0">
+                <div class="d-flex align-items-center bgc-purple-d2 py-3 border-l-3 brc-white-tp2" role="button">
+
+                  <div class="pos-rel p-3 bgc-white-tp8 radius-round ml-3 mr-3 shadow-md">
+                    <i class="pos-abs mt-n1 fa fa-clipboard text-dark-tp5 opacity-4 w-5 h-5 text-center pt-1 fa-2x"></i>
+                    <i class="pos-rel fa fa-check text-white w-5 h-5 text-center pt-1 text-170"></i>
+                  </div>
+
+                  <div class="text-white">
+                    <div>
+                      <span class="text-160 text-600">20</span>
+                      <i class="fa fa-plus text-white ml-1"></i>
+                    </div>
+                    <div class="text-uppercase text-85 text-600 letter-spacing">
+                      Completed Tasks
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="col-12 col-sm-6 col-lg-3 my-1 my-lg-0 px-sm-1 px-lg-0">
+                <div class="d-flex align-items-center bgc-default-d3 py-3 border-l-3 brc-white-tp2" role="button">
+
+                  <div class="pos-rel p-3 bgc-white-tp8 radius-round ml-3 mr-3 shadow-md">
+                    <i class="pos-abs mt-n2px ml-n3px fa fa-retweet text-dark-tp5 opacity-5 w-5 h-5 text-center pt-1 text-170"></i>
+                    <i class="pos-rel fa fa-retweet text-white w-5 h-5 text-center pt-1 text-170"></i>
+                  </div>
+
+                  <div class="text-white">
+                    <div>
+                      <span class="text-160 text-600">65%</span>
+                      <i class="fa fa-arrow-right text-white ml-2"></i>
+                    </div>
+                    <div class="text-uppercase text-85 text-600 letter-spacing">
+                      Conversion Rate
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="row mt-45">
+              <div class="col-lg-7 col-12 pl-lg-0 pr-lg-2">
+                <!-- we could use '.card' here as well -->
+                <div class="bcard radius-2 h-100 d-flex flex-column py-35 px-2 px-lg-4">
+                  <div class="d-flex mb-4">
+                    <h4 class="text-secondary-d1 text-120 ml-1">
+                      Quick Stats
+                    </h4>
+
+                    <div class="ml-auto d-flex align-items-center">
+                      <div class="dropdown dd-backdrop dd-backdrop-none-md">
+                        <a class="btn btn-light-blue btn-bgc-white btn-bold radius-2 px-3 btn-xs dropdown-toggle" href="#" role="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                          This Week
+                        </a>
+
+                        <div class="dropdown-menu shadow-sm dropdown-menu-right dropdown-caret dropdown-animated dd-slide-up dd-slide-none-md radius-1 brc-secondary-l1">
+                          <div class="dropdown-inner">
+                            <a class="dropdown-item active btn btn-a-lighter-primary btn-a-bold mx-1" href="#">This Week</a>
+                            <a class="dropdown-item btn btn-a-lighter-primary text-secondary mx-1" href="#">Last Week</a>
+                            <a class="dropdown-item btn btn-a-lighter-primary text-secondary mx-1" href="#">This Month</a>
+                            <a class="dropdown-item btn btn-a-lighter-primary text-secondary mx-1" href="#">Last Month</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="ml-1">
+                        <a class="btn btn-outline-secondary btn-brc-tp btn-bold radius-round btn-xs dropdown-toggle" href="#">
+                          <i class="fa fa-ellipsis-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row mb-3 mx-1 px-1">
+                    <div class="col-12 col-sm-4 px-0 d-flex justify-content-between d-sm-block">
+                      <span class="text-grey-m1 ml-1">
+                        revenue
+                    </span>
+
+                      <span class="text-success ml-2 mt-2 text-600 text-95 order-last">+4% <i class="fas fa-caret-up"></i></span>
+
+                      <div class="d-sm-block flex-grow-1 text-right text-sm-left">
+                        <span class="text-130 opacity-2">$</span>
+                        <span class="text-secondary-d3 text-160">
+                            46,220
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4 px-0 d-flex justify-content-between d-sm-block">
+                      <span class="text-grey-m1 ml-1">
+                        expense
+                    </span>
+
+                      <span class="text-orange ml-2 mt-2 text-600 text-95 order-last">+1% <i class="fas fa-caret-down"></i></span>
+
+                      <div class="d-sm-block flex-grow-1 text-right text-sm-left">
+                        <span class="text-130 opacity-2">$</span>
+                        <span class="text-secondary-d3 text-160">
+                            3,500
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-4 px-0 d-flex justify-content-between d-sm-block">
+                      <span class="text-grey-m1 ml-1">
+                        customers
+                    </span>
+
+                      <span class="text-success ml-2 mt-2 text-600 text-95 order-last">+5% <i class="fas fa-caret-up"></i></span>
+
+                      <div class="d-sm-block flex-grow-1 text-right text-sm-left">
+                        <span class="text-secondary-d3 text-160">
+                            315
+                        </span>
+                      </div>
+                    </div>
+                  </div><!-- /.row -->
+
+                  <div>
+                    <canvas id="quickstats-chart" height="120" class="mt-lg-4"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 col-12 pr-lg-0 mt-3 mt-lg-0">
+                <div class="bgc-white shadow-sm radius-2 pt-35 px-0 px-lg-4">
+                  <div class="d-flex mb-2">
+                    <h4 class="text-secondary-d1 text-120 px-3 px-lg-0">
+                      Task Overview
+                    </h4>
+
+                    <div class="ml-auto d-flex align-items-center">
+                      <a class="btn btn-light-secondary btn-bgc-white btn-bold radius-2 px-3 btn-xs text-nowrap" href="#">
+                        See All
+                      </a>
+
+                      <div class="ml-1 mr-2">
+                        <a class="btn btn-outline-secondary btn-brc-tp btn-bold radius-round btn-xs dropdown-toggle" href="#">
+                          <i class="fa fa-ellipsis-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card border-0">
+                    <div class="card-body px-0 px-sm-1 px-lg-0 border-t-1 brc-default-l3 table-responsive-sm">
+                      <table class="table brc-grey-l4 mb-2">
+                        <thead class="bgc-transparent">
+                          <tr>
+                            <th class="border-0 text-secondary-m2">
+                              Title
+                            </th>
+                            <th class="border-0 text-secondary-m2">
+                              Status
+                            </th>
+                            <th class="border-0 text-secondary-m2">
+                              Progress
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+
+                          <tr class="bgc-h-default-l4" role="button">
+                            <td class="text-dark-tp3 text-95">
+                              Perform analysis
+                            </td>
+                            <td>
+                              <span class="badge text-80 border-l-3 brc-black-tp8 bgc-green text-white">complete</span>
+
+
+
+                            </td>
+                            <td class="text-dark-m1 w-6">
+                              <div class="align-self-center pos-rel text-green">
+                                <canvas class="task-progress" height="50" width="80" data-percent="100"></canvas>
+                                <span class="position-center text-80">
+        									100%
+        								</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bgc-h-default-l4" role="button">
+                            <td class="text-dark-tp3 text-95">
+                              Team meeting
+                            </td>
+                            <td>
+
+                              <span class="badge text-80 border-l-3 brc-black-tp8 bgc-blue text-white">in progress</span>
+
+
+                            </td>
+                            <td class="text-dark-m1 w-6">
+                              <div class="align-self-center pos-rel text-blue">
+                                <canvas class="task-progress" height="50" width="80" data-percent="70"></canvas>
+                                <span class="position-center text-80">
+        									70%
+        								</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bgc-h-default-l4" role="button">
+                            <td class="text-dark-tp3 text-95">
+                              Office redesign
+                            </td>
+                            <td>
+
+
+                              <span class="badge text-80 border-l-3 brc-black-tp8 bgc-orange text-white">pending</span>
+
+                            </td>
+                            <td class="text-dark-m1 w-6">
+                              <div class="align-self-center pos-rel text-orange-d2">
+                                <canvas class="task-progress" height="50" width="80" data-percent="40"></canvas>
+                                <span class="position-center text-80">
+        									40%
+        								</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bgc-h-default-l4" role="button">
+                            <td class="text-dark-tp3 text-95">
+                              Unnecessary task
+                            </td>
+                            <td>
+
+
+
+                              <span class="badge text-80 border-l-3 brc-black-tp8 bgc-red text-white">cancelled</span>
+                            </td>
+                            <td class="text-dark-m1 w-6">
+                              <div class="align-self-center pos-rel text-danger">
+                                <canvas class="task-progress" height="50" width="80" data-percent="20"></canvas>
+                                <span class="position-center text-80">
+        									20%
+        								</span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="bgc-h-default-l4" role="button">
+                            <td class="text-dark-tp3 text-95">
+                              Customer followup
+                            </td>
+                            <td>
+                              <span class="badge text-80 border-l-3 brc-black-tp8 bgc-green text-white">complete</span>
+
+
+
+                            </td>
+                            <td class="text-dark-m1 w-6">
+                              <div class="align-self-center pos-rel text-green">
+                                <canvas class="task-progress" height="50" width="80" data-percent="95"></canvas>
+                                <span class="position-center text-80">
+        									95%
+        								</span>
+                              </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="row mt-4 mt-lg-5">
+              <div class="col-12 px-lg-0">
+                <h4 class="text-dark-m3 pb-0 mb-3 text-140 pl-2">
+                  Calendar and Events
+                </h4>
+
+                <div class="bgc-white shadow-sm p-3 p-lg-4 radius-2">
+                  <div id='calendar' class="text-dark-l1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer-inner">
+              <div class="h-100 pt-3 border-t-1 brc-secondary-l2 bgc-white-tp1 shadow-md">
+                <span class="text-primary-m1 font-bolder text-120">Ace</span>
+                <span class="text-secondary-d2">Application &copy; 2021</span>
+
+                <span class="mx-3 action-buttons">
+                      <a href="#" class="text-blue-m2 text-140"><i class="fab fa-twitter-square"></i></a>
+                      <a href="#" class="text-blue-d2 text-140"><i class="fab fa-facebook"></i></a>
+                      <a href="#" class="text-orange-d1 text-140"><i class="fa fa-rss-square"></i></a>
+                   </span>
+              </div>
+            </div><!-- .footer-inner -->
+          </footer>
+
+          <div class="footer-tools">
+            <a href="#" class="btn-scroll-up btn btn-green px-25 py-2 text-95 radius-1 mb-2 mr-2">
+              <i class="fa fa-angle-double-up w-2 h-2"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- include common vendor scripts used in demo pages -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!-- include vendor scripts used in "Horizontal Menu" page. see "/views//pages/partials/horizontal/@vendor-scripts.hbs" -->
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+
+    <script src="node_modules/fullcalendar/main.js"></script>
+
+
+    <!-- include ace.js -->
+    <script src="dist/js/ace.js"></script>
+
+
+
+    <!-- demo.js is only for Ace's demo and you shouldn't use it -->
+    <script src="app/browser/demo.html"></script>
+
+
+
+    <!-- "Horizontal Menu" page script to enable its demo functionality -->
+    <script src="views/pages/horizontal/%40page-script.js"></script>
+  </body>
+
+
+<!-- Mirrored from www.xn--b3c3da.com/haclc/horizontal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 02:08:02 GMT -->
+</html>

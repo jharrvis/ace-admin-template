@@ -1,0 +1,20 @@
+.body-container  {
+  /* so that sticky thead works */
+  overflow: visible;
+}
+thead.is-stuck > tr > th {
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+
+.dt-print-view {
+  background-color: #fff;
+}
+
+.dt-print-view .dataTable th:nth-child(1),
+.dt-print-view .dataTable th:nth-child(2),
+.dt-print-view .dataTable th:last-child,
+.dt-print-view .dataTable td:nth-child(1),
+.dt-print-view .dataTable td:nth-child(2),
+.dt-print-view .dataTable td:last-child {
+  display: none
+} 

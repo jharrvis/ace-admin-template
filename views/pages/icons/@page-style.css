@@ -1,0 +1,42 @@
+/* some styling for new icons, to look good on sidebar */
+.sidebar .nav > .nav-item > .nav-link > .nav-icon.material-icons,
+.sidebar .nav > .nav-item > .nav-link > .nav-icon.material-icons-outlined,
+.sidebar .nav > .nav-item > .nav-link > .nav-icon.jam,
+.sidebar .nav > .nav-item > .nav-link > .nav-icon.eva {
+    font-size: 1.5rem;
+    line-height: inherit;
+    width: 1.375rem;
+
+    margin-left: 0.125rem;
+}
+
+
+/* material icons carets */
+.sidebar .caret.material-icons,
+.sidebar .caret.material-icons-outlined {
+    font-size: 1.25rem;
+    margin-right: 0.575rem;
+}
+.sidebar .submenu .caret.material-icons,
+.sidebar .submenu .caret.material-icons-outlined {
+    margin-right: 1.125rem;
+}
+
+
+/* make jam icon carets smaller */
+.sidebar .caret.jam {
+   font-size: 1.125rem;
+   margin-right: 0.625rem;
+}
+.sidebar .submenu .caret.jam {
+   margin-right: 1.175rem;
+}
+
+/* make eva icon carets larger */
+.sidebar .caret.eva {
+   font-size: 1.5rem;
+   margin-right: 0.5rem;
+}
+.sidebar .submenu .caret.eva {
+   margin-right: 1rem;
+}

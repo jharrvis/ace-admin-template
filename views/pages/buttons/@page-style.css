@@ -1,0 +1,17 @@
+/* for .btn-light-* buttons use a ripple based on `currenColor` */
+.waves-effect:not(.waves-light) .waves-ripple {
+  color: inherit;
+  background: radial-gradient(transparent 0, currentColor 100%);
+}
+
+/* and make `currenColor` lighter by adding a white-ish layer over it*/
+.waves-effect:not(.waves-light) .waves-ripple:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: radial-gradient(transparent 0, rgba(255,255,255,0.4) 100%);
+}

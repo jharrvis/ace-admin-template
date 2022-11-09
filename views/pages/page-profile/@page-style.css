@@ -1,0 +1,25 @@
+@media (max-width: 767.98px) {
+    .sticky-nav .nav-tabs {
+        transition: margin 200ms;
+    }
+
+    .sticky-nav.is-stuck .nav-tabs {
+        border-radius: 0 !important;
+        border-width: 0 0 1px 0 !important;
+        border-bottom-color: rgba(0,0,0,0.12) !important;
+    
+        margin-left: -1rem;
+        margin-right: -1rem;
+    
+        box-shadow: 0 1px 5px 2px rgba(0,0,0,0.09);
+    }
+    
+    .sticky-nav > .position-tr.w-100 {
+        z-index: 1;
+    }
+
+    /* hide the blue border when nav gets fixed */
+    .sticky-nav.is-stuck > .position-tr.w-100 {
+       display: none;
+    }
+}

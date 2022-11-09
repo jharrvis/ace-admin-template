@@ -1,0 +1,8 @@
+.detail-row+tr>td {
+    border-top-width: 0;
+}
+
+.table-detail {
+    border-bottom: 1px solid;
+    border-color: inherit;
+}

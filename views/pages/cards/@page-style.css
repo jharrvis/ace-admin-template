@@ -1,0 +1,33 @@
+.card {
+    overflow: hidden;
+}
+
+/* the loading/progressing bar animation */
+
+@keyframes card-progress-frames {
+    0%{transform:translateX(-100%)}
+    15%{transform:translateX(0%) scaleX(0.3)}
+    40%{transform:translateX(55%) scaleX(0.1)}
+    85%{transform:translateX(140%) scaleX(0.6)}
+    100%{transform:translateX(100%)}
+}
+
+.card-progress {
+    overflow: hidden;
+    height: 4px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-progressbar {
+    height: inherit;
+    transform-origin: left;
+    animation: card-progress-frames 2.2s infinite linear;
+    min-width: 360px;
+}
+
+/* Disable on IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .card-progressbar {
+        animation: none;
+    }   
+}

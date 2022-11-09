@@ -1,0 +1,23 @@
+/** the chat dialog appear animation **/
+@keyframes chatAppear {
+    70% { transform: translateY(-20%); }
+    80% { transform: translateY(-20%); }
+    100% { opacity: 1; transform: none; }
+}
+
+.animation-appear {
+    opacity: 0;
+    transform: translateY(75%);
+
+    animation: 750ms chatAppear;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    transform-origin: bottom center;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .animation-appear {
+        animation-duration: 1ms;
+    }
+}

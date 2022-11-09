@@ -1,0 +1,2316 @@
+<!doctype html>
+<html lang="en">
+
+  
+<!-- Mirrored from www.xn--b3c3da.com/haclc/two-menus-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 02:08:03 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <base #href="" />
+
+    <title>Two Menus - Ace Admin</title>
+
+    <!-- include common vendor stylesheets & fontawesome -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/regular.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/%40fortawesome/fontawesome-free/css/solid.css">
+
+
+
+    <!-- include vendor stylesheets used in "Two Menus" page. see "/views//pages/partials/two-menus-1/@vendor-stylesheets.hbs" -->
+
+
+    <!-- include fonts -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-font.css">
+
+
+
+    <!-- ace.css -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace.css">
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- "Two Menus" page styles, specific to this page for demo only -->
+    <link rel="stylesheet" type="text/css" href="dist/css/ace-themes.css">
+
+  </head>
+
+  <body>
+    <div class="body-container">
+
+      <div class="main-container bgc-white">
+        <div id="sidebar1" class="sidebar expandable sidebar-fixed sidebar-dark2 sidebar-color" data-dismiss="true" data-backdrop="true" data-swipe="true">
+          <div class="sidebar-inner">
+
+            <!-- .navbar-brand inside sidebar, only show in desktop view -->
+            <div class="d-none d-xl-flex sidebar-section-item m-0 fadeable-left fadeable-top">
+              <div class="fadeinable">
+                <div class="py-2 mx-1 border-b-1 brc-white-tp9">
+                  <a class="navbar-brand text-140">
+                    <i class="fa fa-leaf text-success-l3"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="fadeable w-100 ">
+                <div class="py-25 d-flex mx-3 border-b-1 brc-white-tp9">
+
+
+                  <a class="navbar-brand text-140 text-white-tp1 py-0 " href="#">
+                    <i class="fa fa-leaf mr-1 text-success-l3"></i>
+                    ACE <span>App</span>
+                  </a>
+
+                  <button type="button" class="d-style ml-auto btn btn-burger bgc-h-white-tp9 px-2px align-self-center align-middle d-none d-xl-inline-flex" data-toggle="sidebar" data-target="#sidebar1" aria-controls="sidebar1" aria-expanded="true" aria-label="Toggle sidebar">
+                    <span class="bars"></span>
+                    <i class="v-n-collapsed fa fa-caret-left position-l text-75 ml-2px text-orange-l3"></i>
+                    <i class="v-collapsed fa fa-caret-right position-r text-75 mr-2px text-orange-l3"></i>
+                  </button>
+                </div>
+              </div>
+            </div><!-- /.sidebar-section-item  -->
+
+            <nav aria-label="Main" class="pt-2 flex-grow-1 ace-scroll" data-ace-scroll="{}">
+              <div class="d-xl-none text-right pr-1 h-1 pos-rel" style="z-index: 10;">
+                <button type="button" class="btn collapsed btn-light-primary border-0" data-toggle-mobile="sidebar" data-target="#sidebar1" aria-controls="sidebar1" aria-expanded="false" aria-label="Toggle sidebar">
+                  <i class="fa fa-times"></i>
+                </button><!-- mobile sidebar toggler button -->
+              </div>
+
+              <ul class="nav flex-column mt-2 has-active-border has-active-arrow active-on-top">
+
+
+                <li class="nav-item-caption">
+                  <span class="fadeable pl-3">MAIN</span>
+                  <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                  <!--
+                 			OR something like the following (with `.hideable` text)
+                 		-->
+                  <!--
+                 			<div class="hideable">
+                 				<span class="pl-3">MAIN</span>
+                 			</div>
+                 			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                 		-->
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="dashboard.html" class="nav-link">
+                    <i class="nav-icon fa fa-tachometer-alt"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Dashboard</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item active open">
+
+                  <a href="#" class="nav-link dropdown-toggle">
+                    <i class="nav-icon fa fa-cube"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Layouts</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                 	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse show">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-2.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Dashboard 2</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-3.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Dashboard 3</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dashboard-4.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Dashboard 4</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="horizontal.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Horizontal Menu</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item active">
+
+                        <a href="two-menus-1.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Two Menus</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="landing-page-1.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Landing Page 1</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="landing-page-2.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Landing Page 2</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="coming-soon.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Coming Soon</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-desktop"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>UI Elements</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                 	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="buttons.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Buttons</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="button-groups.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Button Groups</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="alerts.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Alerts</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="modals.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Modals</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="asides.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Asides</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="tabs.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Tabs</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="accordions.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Accordions</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="tooltips.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Tooltips &amp; Popovers</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="badges.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Badges</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="pagination.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Pagination</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="dropdowns.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Dropdowns</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="icons.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Icons</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="typography.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Typography</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="charts.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Charts</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="treeview.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Treeview</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="#" class="nav-link dropdown-toggle collapsed">
+
+                          <span class="nav-text">
+                 				  <span>Nested Links</span>
+                          </span>
+
+                          <b class="caret fa fa-angle-left rt-n90"></b>
+
+                          <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                          <!--
+                 				 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 				 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 				 -->
+                        </a>
+
+                        <div class=" submenu collapse">
+                          <ul class="submenu-inner">
+
+                            <li class="nav-item">
+
+                              <a href="#" class="nav-link dropdown-toggle collapsed">
+                                <i class="nav-icon fa fa-caret-right text-blue-l2 mr-2"></i>
+                                <span class="nav-text">
+                 							  <span>Third Level Menu</span>
+                                </span>
+
+                                <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                <!--
+                 							 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 							 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 							 -->
+                              </a>
+
+                              <div class=" submenu collapse">
+                                <ul class="submenu-inner">
+
+                                  <li class="nav-item">
+
+                                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                                      <i class="nav-icon fa fa-leaf text-success-l2 text-90 mr-2"></i>
+                                      <span class="nav-text">
+                 										  <span>Fourth Level</span>
+                                      </span>
+
+                                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                      <!--
+                 										 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 										 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 										 -->
+                                    </a>
+
+                                    <div class=" submenu collapse">
+                                      <ul class="submenu-inner">
+
+                                        <li class="nav-item">
+
+                                          <a href="#" class="nav-link">
+                                            <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                            <span class="nav-text">
+                 													  <span>5th Level</span>
+                                            </span>
+
+
+                                          </a>
+
+
+                                        </li>
+
+
+                                        <li class="nav-item">
+
+                                          <a href="#" class="nav-link">
+                                            <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                            <span class="nav-text">
+                 													  <span>5th Level</span>
+                                            </span>
+
+
+                                          </a>
+
+
+                                        </li>
+
+                                      </ul>
+                                    </div>
+
+                                    <b class="sub-arrow"></b>
+
+                                  </li>
+
+                                </ul>
+                              </div>
+
+                              <b class="sub-arrow"></b>
+
+                            </li>
+
+                          </ul>
+                        </div>
+
+                        <b class="sub-arrow"></b>
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-table"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Tables</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                 	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="table-basic.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Basic Tables</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-datatables.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>DataTables</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-bootstrap.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Bootstrap Table</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="table-jqgrid.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>jqGrid</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-edit"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Forms</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                 	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="form-basic.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Basic Elements</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-more.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>More Elements</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-wizard.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Wizard &amp; Validation</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-upload.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>File Upload</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="form-wysiwyg.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Wysiwyg &amp; Markdown</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="cards.html" class="nav-link">
+                    <i class="nav-icon far fa-window-restore"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Cards</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="calendar.html" class="nav-link">
+                    <i class="nav-icon far fa-calendar-alt"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Calendar</span>
+                    <span class="badge px-1 " title="2 Urgent Events"><i class='fas fa-exclamation-triangle text-140 text-danger-m2'></i></span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="gallery.html" class="nav-link">
+                    <i class="nav-icon far fa-image"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>Gallery</span>
+                    </span>
+
+
+                  </a>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+
+
+                <li class="nav-item-caption">
+                  <span class="fadeable pl-3">OTHER</span>
+                  <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                  <!--
+                 			OR something like the following (with `.hideable` text)
+                 		-->
+                  <!--
+                 			<div class="hideable">
+                 				<span class="pl-3">OTHER</span>
+                 			</div>
+                 			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                 		-->
+                </li>
+
+
+                <li class="nav-item">
+
+                  <a href="#" class="nav-link dropdown-toggle collapsed">
+                    <i class="nav-icon fa fa-tag"></i>
+                    <span class="nav-text fadeable">
+                 	  <span>More Pages</span>
+                    <span class="badge badge-primary py-1 radius-round text-90 mr-2px badge-sm ">5</span>
+                    </span>
+
+                    <b class="caret fa fa-angle-left rt-n90"></b>
+
+                    <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                    <!--
+                 	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                 	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                 	 -->
+                  </a>
+
+                  <div class="hideable submenu collapse">
+                    <ul class="submenu-inner">
+
+                      <li class="nav-item">
+
+                        <a href="page-profile.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Profile</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-login.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Login</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-pricing.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Pricing</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-invoice.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Invoice</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-inbox.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Inbox</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-search.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Search Results</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="page-error.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Error</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+
+                      <li class="nav-item">
+
+                        <a href="starter.html" class="nav-link">
+
+                          <span class="nav-text">
+                 				  <span>Starter</span>
+                          </span>
+
+
+                        </a>
+
+
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <b class="sub-arrow"></b>
+
+                </li>
+
+              </ul>
+
+            </nav><!-- /.ace-scroll -->
+
+          </div>
+        </div><!-- /#sidebar1 -->
+
+        <div role="main" class="main-content">
+          <nav class="navbar navbar-sm navbar-fixed-xl navbar-expand-lg navbar-slategrey">
+            <div class="navbar-inner">
+
+              <div class="navbar-intro justify-content-xl-start bg-transparent pr-lg-3 pos-rel">
+                <div class="position-tr h-100 border-r-1 brc-white-tp7 d-none d-lg-block"></div>
+
+                <button type="button" class="btn burger-arrowed static collapsed ml-2 d-flex d-xl-none btn-h-dark btn-burger" data-toggle-mobile="sidebar" data-target="#sidebar1" aria-controls="sidebar1" aria-expanded="false" aria-label="Toggle sidebar">
+                  <span class="bars bgc-white-tp1"></span>
+                </button><!-- mobile sidebar toggler button -->
+
+                <a class="navbar-brand d-xl-none mx-1 text-white-tp1 text-130" href="#">
+                  <i class="fa fa-leaf mr-2px text-success-l4"></i>
+                  ACE
+                  <span class="d-none d-sm-inline-block">App</span>
+                </a>
+
+                <button type="button" class="btn burger-dots static collapsed ml-2 d-flex d-xl-none btn-h-dark btn-burger" data-toggle-mobile="sidebar" data-target="#sidebar2" aria-controls="sidebar2" aria-expanded="false" aria-label="Toggle sidebar">
+                  <span class="bars bgc-white-tp1"></span>
+                </button><!-- mobile sidebar toggler button -->
+
+                <button id="hide-sidebar" type="button" class="d-none d-xl-inline-block d-style btn btn-burger px-2 ml-2 align-middle border-0">
+                  <i class="fa fa-angle-double-left text-120 d-n-collapsed"></i>
+                  <i class="fa fa-angle-double-right text-120 d-collapsed"></i>
+                </button>
+
+              </div><!-- /.navbar-intro -->
+
+              <div class="navbar-content d-xl-flex flex-grow-0 flex-lg-grow-1 ml-auto mr-2">
+                <button class="navbar-toggler h-75" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle navbar search">
+                  <i class="fa fa-search text-white text-90"></i>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-backdrop" id="navbarSearch">
+                  <div class="d-flex align-items-center pl-4 py-1 py-lg-0">
+                    <i class="d-none d-lg-block fa fa-search text-white text-85 pos-rel"></i>
+                    <input type="text" class="navbar-input pl-45 pr-3 py-3 py-lg-2 ml-n3 ml-lg-n4 bgc-black-tp7 radius-round border-0 w-100 h-auto autofocus" placeholder="SEARCH ..." aria-label="Search" />
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="navbar-content flex-grow-0 ml-0">
+                <button type="button" id="id-nav-post-btn" class="btn btn-white btn-bold border-0 btn-sm mx-lg-2 px-2">
+                  <i class="bgc-green radius-round w-3 h-3 text-center fa fa-plus mr-lg-1 text-white pt-15 text-95"></i>
+                  <span class="d-none d-lg-inline">Create New</span>
+                </button>
+              </div>
+
+
+              <!-- mobile #navbarMenu toggler button -->
+              <button class="navbar-toggler ml-1 mr-2 px-1" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navbar menu">
+                <span class="pos-rel">
+                       <img class="radius-3px mr-1 brc-grey-m2 border-1" width="36" src="assets/image/avatar/avatar6.jpg" alt="Jason's Photo" />
+                       <span class="bgc-warning radius-round border-2 brc-white p-1 position-tr mr-1px mt-n15"></span>
+                </span>
+              </button>
+
+
+              <div class="navbar-menu collapse navbar-collapse navbar-backdrop" id="navbarMenu">
+
+                <div class="navbar-nav">
+                  <ul class="nav nav-compact has-active-border">
+
+                    <li class="nav-item dropdown dropdown-mega">
+                      <a class="nav-link dropdown-toggle px-lg-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="far fa-bell text-110 icon-animated-bell mr-lg-2"></i>
+
+                        <span class="d-inline-block d-lg-none ml-2">Notifications</span><!-- show only on mobile -->
+                        <span class="d-none d-lg-block p-1 radius-round bgc-danger position-tr mt-25 mr-25 border-1 brc-white-tp2"></span>
+                        <span class="d-lg-none p-1 radius-round bgc-danger border-1 brc-white-tp2 ml-2"></span>
+
+                        <i class="caret fa fa-angle-left d-block d-lg-none"></i>
+                      </a>
+                      <div class="shadow dropdown-menu dropdown-animated dropdown-sm p-0 bg-white brc-primary-m3 border-1 border-b-2">
+                        <ul class="nav nav-tabs nav-tabs-simple w-100 nav-justified dropdown-clickable border-b-1 brc-secondary-l2" role="tablist">
+                          <li class="nav-item">
+                            <a class="d-style px-0 mx-0 py-3 nav-link active text-600 brc-blue-m1 text-dark-tp5 bgc-h-blue-l4" data-toggle="tab" href="#navbar-notif-tab-1" role="tab">
+                              <span class="d-active text-blue-d1 text-105">Notifications</span>
+                              <span class="d-n-active">Notifications</span>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="d-style px-0 mx-0 py-3 nav-link text-600 brc-purple-m1 text-dark-tp5 bgc-h-purple-l4" data-toggle="tab" href="#navbar-notif-tab-2" role="tab">
+                              <span class="d-active text-purple-d1 text-105">Messages</span>
+                              <span class="d-n-active">Messages</span>
+                            </a>
+                          </li>
+                        </ul><!-- .nav-tabs -->
+
+
+                        <div class="tab-content tab-sliding p-0">
+
+                          <div class="tab-pane mh-none show active px-md-1 pt-1" id="navbar-notif-tab-1" role="tabpanel">
+
+                            <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <i class="fab fa-twitter bgc-blue-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                              <span class="text-muted">Followers</span>
+                              <span class="float-right badge badge-danger radius-round text-80">- 4</span>
+                            </a>
+                            <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <i class="fa fa-comment bgc-pink-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                              <span class="text-muted">New Comments</span>
+                              <span class="float-right badge badge-info radius-round text-80">+12</span>
+                            </a>
+                            <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <i class="fa fa-shopping-cart bgc-success-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                              <span class="text-muted">New Orders</span>
+                              <span class="float-right badge badge-success radius-round text-80">+8</span>
+                            </a>
+                            <a href="#" class="mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                              <i class="far fa-clock bgc-purple-tp1 text-white text-110 mr-15 p-2 radius-1"></i>
+                              <span class="text-muted">Finished processing data!</span>
+                            </a>
+
+                            <hr class="mt-1 mb-1px brc-secondary-l2" />
+                            <a href="#" class="mb-0 py-3 border-0 list-group-item text-blue text-uppercase text-center text-85 font-bolder">
+                              See All Notifications
+                              <i class="ml-2 fa fa-arrow-right text-muted"></i>
+                            </a>
+
+                          </div><!-- .tab-pane : notifications -->
+
+
+                          <div class="tab-pane mh-none pl-md-2" id="navbar-notif-tab-2" role="tabpanel">
+                            <div data-ace-scroll='{"ignore": "mobile", "height": 300, "smooth":true}'>
+                              <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                                <img alt="Alex's avatar" src="assets/image/avatar/avatar.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                                <div>
+                                  <span class="text-primary-m1 font-bolder">Alex:</span>
+                                  <span class="text-grey text-90">Ciao sociis natoque penatibus et auctor ...</span>
+                                  <br />
+                                  <span class="text-grey-m1 text-85">
+                                                       <i class="far fa-clock"></i>
+                                                       a moment ago
+                                                   </span>
+                                </div>
+                              </a>
+                              <hr class="my-1px brc-grey-l3" />
+                              <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                                <img alt="Susan's avatar" src="assets/image/avatar/avatar3.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                                <div>
+                                  <span class="text-primary-m1 font-bolder">Susan:</span>
+                                  <span class="text-grey text-90">Vestibulum id ligula porta felis euismod ...</span>
+                                  <br />
+                                  <span class="text-grey-m1 text-85">
+                                                       <i class="far fa-clock"></i>
+                                                       20 minutes ago
+                                                   </span>
+                                </div>
+                              </a>
+                              <hr class="my-1px brc-grey-l3" />
+                              <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                                <img alt="Bob's avatar" src="assets/image/avatar/avatar4.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                                <div>
+                                  <span class="text-primary-m1 font-bolder">Bob:</span>
+                                  <span class="text-grey text-90">Nullam quis risus eget urna mollis ornare ...</span>
+                                  <br />
+                                  <span class="text-grey-m1 text-85">
+                                                       <i class="far fa-clock"></i>
+                                                       3:15 pm
+                                                   </span>
+                                </div>
+                              </a>
+                              <hr class="my-1px brc-grey-l3" />
+                              <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                                <img alt="Kate's avatar" src="assets/image/avatar/avatar2.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                                <div>
+                                  <span class="text-primary-m1 font-bolder">Kate:</span>
+                                  <span class="text-grey text-90">Ciao sociis natoque eget urna mollis ornare ...</span>
+                                  <br />
+                                  <span class="text-grey-m1 text-85">
+                                                       <i class="far fa-clock"></i>
+                                                       1:33 pm
+                                                   </span>
+                                </div>
+                              </a>
+                              <hr class="my-1px brc-grey-l3" />
+                              <a href="#" class="d-flex mb-0 border-0 list-group-item list-group-item-action btn-h-lighter-secondary">
+                                <img alt="Fred's avatar" src="assets/image/avatar/avatar5.png" width="48" class="align-self-start border-2 brc-primary-m3 p-1px mr-2 radius-round" />
+                                <div>
+                                  <span class="text-primary-m1 font-bolder">Fred:</span>
+                                  <span class="text-grey text-90">Vestibulum id penatibus et auctor  ...</span>
+                                  <br />
+                                  <span class="text-grey-m1 text-85">
+                                                       <i class="far fa-clock"></i>
+                                                       10:09 am
+                                                   </span>
+                                </div>
+                              </a>
+
+                            </div><!-- ace-scroll -->
+
+                            <hr class="my-1px brc-secondary-l2 border-double" />
+                            <a href="page-inbox.html" class="mb-0 py-3 border-0 list-group-item text-purple text-uppercase text-center text-85 font-bolder">
+                              See All Messages
+                              <i class="ml-2 fa fa-arrow-right text-muted"></i>
+                            </a>
+                          </div><!-- .tab-pane : messages -->
+
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a href="#" class="nav-link pl-lg-3 pr-lg-4 pos-rel">
+                        <i class="far fa-envelope text-110 icon-animated-vertical"></i>
+
+                        <span class="d-inline-block d-lg-none ml-2">Messages</span><!-- show only on mobile -->
+                        <span class="d-none d-lg-block text-600 text-warning-l2 text-80 mt-2 mr-2 position-tr">+2</span>
+                        <span class="d-lg-none text-600 text-warning-l2 text-90 ml-2">(+2)</span>
+                      </a>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown order-first order-lg-last dropdown-hover">
+                      <a class="nav-link dropdown-toggle px-lg-2 ml-lg-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img id="id-navbar-user-image" class="d-none d-lg-inline-block radius-3px mr-1 brc-grey-m2 border-1" src="assets/image/avatar/avatar6.jpg" height="42" alt="Jason's Photo" />
+
+                        <span class="d-inline-block d-lg-none">Welcome, Jason</span><!-- show only on mobile -->
+
+                        <i class="caret fa fa-ellipsis-v d-none d-xl-block"></i>
+                        <i class="caret fa fa-angle-left d-block d-lg-none"></i>
+                      </a>
+
+                      <div class="dropdown-menu dropdown-caret dropdown-menu-right brc-primary-m3">
+                        <div class="d-none d-lg-block">
+                          <div class="dropdown-header">
+                            Welcome, Jason
+                          </div>
+                          <div class="dropdown-divider"></div>
+                        </div>
+
+                        <a class="dropdown-item btn btn-outline-grey btn-h-lighter-primary btn-a-lighter-primary" href="page-profile.html">
+                          <i class="fa fa-user text-primary-m1 text-105 mr-1"></i>
+                          Profile
+                        </a>
+
+                        <a class="dropdown-item btn btn-outline-grey btn-h-lighter-success btn-a-lighter-success" href="#" data-toggle="modal" data-target="#id-ace-settings-modal">
+                          <i class="fa fa-cog text-success-m1 text-105 mr-1"></i>
+                          Settings
+                        </a>
+
+                        <div class="dropdown-divider brc-primary-l2"></div>
+
+                        <a class="dropdown-item btn btn-outline-grey btn-h-lighter-secondary btn-a-lighter-secondary" href="page-login.html">
+                          <i class="fa fa-power-off text-warning-d1 text-105 mr-1"></i>
+                          Logout
+                        </a>
+                      </div>
+                    </li><!-- /.nav-item:last -->
+
+                  </ul><!-- /.navbar-nav menu -->
+                </div><!-- /.navbar-nav -->
+
+              </div><!-- /.navbar-menu.navbar-collapse -->
+
+            </div><!-- /.navbar-inner -->
+          </nav>
+          <div id="sidebar2" class="sidebar sidebar-fixed sidebar-hover sidebar-h collapsed-h sidebar-light" data-dismiss="true" data-backdrop="true" data-swipe="true">
+            <div class="sidebar-inner align-items-xl-end border-b-1 brc-grey-l2 border-r-0 shadow-none">
+
+              <div class="sidebar-section d-none d-xl-block align-self-center">
+                <button type="button" class="d-style btn align-self-center ml-2 btn-outline-grey collapsed" data-toggle="sidebar" data-toggle-class="collapsed-h" data-target="#sidebar2" aria-controls="sidebar2" aria-expanded="false" aria-label="Toggle sidebar">
+                  <i class="fa fa-minus d-n-collapsed"></i>
+                  <i class="fa fa-plus d-collapsed"></i>
+                </button><!-- desktop sidebar toggler button -->
+              </div>
+
+
+              <div class="d-xl-none text-right position-tr" style="z-index: 5;">
+                <button type="button" class="btn collapsed btn-light-red radius-0" data-toggle-mobile="sidebar" data-target="#sidebar2" aria-controls="sidebar2" aria-expanded="false" aria-label="Toggle sidebar">
+                  <i class="fa fa-times"></i>
+                </button><!-- mobile sidebar toggler button -->
+              </div>
+
+
+              <nav aria-label="Main" class="ml-xl-3 flex-grow-1 flex-xl-grow-0 d-xl-flex flex-xl-row ace-scroll" data-ace-scroll="{}">
+                <ul class="nav w-auto has-active-border active-on-right active-on-top">
+
+
+                  <li class="nav-item-caption">
+                    <span class="fadeable pl-3">MAIN</span>
+                    <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                    <!--
+                    			OR something like the following (with `.hideable` text)
+                    		-->
+                    <!--
+                    			<div class="hideable">
+                    				<span class="pl-3">MAIN</span>
+                    			</div>
+                    			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                    		-->
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="dashboard.html" class="nav-link">
+                      <i class="nav-icon fa fa-tachometer-alt"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Dashboard</span>
+                      </span>
+
+
+                    </a>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item active open">
+
+                    <a href="#" class="nav-link dropdown-toggle">
+                      <i class="nav-icon fa fa-cube"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Layouts</span>
+                      </span>
+
+                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                      <!--
+                    	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    	 -->
+                    </a>
+
+                    <div class="hideable submenu collapse show">
+                      <ul class="submenu-inner">
+
+                        <li class="nav-item">
+
+                          <a href="dashboard-2.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Dashboard 2</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="dashboard-3.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Dashboard 3</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="dashboard-4.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Dashboard 4</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="horizontal.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Horizontal Menu</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item active">
+
+                          <a href="two-menus-1.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Two Menus</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="landing-page-1.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Landing Page 1</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="landing-page-2.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Landing Page 2</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="coming-soon.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Coming Soon</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                      <i class="nav-icon fa fa-desktop"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>UI Elements</span>
+                      </span>
+
+                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                      <!--
+                    	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    	 -->
+                    </a>
+
+                    <div class="hideable submenu collapse">
+                      <ul class="submenu-inner">
+
+                        <li class="nav-item">
+
+                          <a href="buttons.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Buttons</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="button-groups.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Button Groups</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="alerts.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Alerts</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="modals.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Modals</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="asides.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Asides</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="tabs.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Tabs</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="accordions.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Accordions</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="tooltips.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Tooltips &amp; Popovers</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="badges.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Badges</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="pagination.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Pagination</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="dropdowns.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Dropdowns</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="icons.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Icons</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="typography.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Typography</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="charts.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Charts</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="treeview.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Treeview</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="#" class="nav-link dropdown-toggle collapsed">
+
+                            <span class="nav-text">
+                    				  <span>Nested Links</span>
+                            </span>
+
+                            <b class="caret fa fa-angle-left rt-n90"></b>
+
+                            <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                            <!--
+                    				 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    				 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    				 -->
+                          </a>
+
+                          <div class=" submenu collapse">
+                            <ul class="submenu-inner">
+
+                              <li class="nav-item">
+
+                                <a href="#" class="nav-link dropdown-toggle collapsed">
+                                  <i class="nav-icon fa fa-caret-right text-blue-l2 mr-2"></i>
+                                  <span class="nav-text">
+                    							  <span>Third Level Menu</span>
+                                  </span>
+
+                                  <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                  <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                  <!--
+                    							 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    							 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    							 -->
+                                </a>
+
+                                <div class=" submenu collapse">
+                                  <ul class="submenu-inner">
+
+                                    <li class="nav-item">
+
+                                      <a href="#" class="nav-link dropdown-toggle collapsed">
+                                        <i class="nav-icon fa fa-leaf text-success-l2 text-90 mr-2"></i>
+                                        <span class="nav-text">
+                    										  <span>Fourth Level</span>
+                                        </span>
+
+                                        <b class="caret fa fa-angle-left rt-n90"></b>
+
+                                        <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                                        <!--
+                    										 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    										 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    										 -->
+                                      </a>
+
+                                      <div class=" submenu collapse">
+                                        <ul class="submenu-inner">
+
+                                          <li class="nav-item">
+
+                                            <a href="#" class="nav-link">
+                                              <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                              <span class="nav-text">
+                    													  <span>5th Level</span>
+                                              </span>
+
+
+                                            </a>
+
+
+                                          </li>
+
+
+                                          <li class="nav-item">
+
+                                            <a href="#" class="nav-link">
+                                              <i class="nav-icon fa fa-stop text-warning-l1 text-80 mx-2"></i>
+                                              <span class="nav-text">
+                    													  <span>5th Level</span>
+                                              </span>
+
+
+                                            </a>
+
+
+                                          </li>
+
+                                        </ul>
+                                      </div>
+
+                                      <b class="sub-arrow"></b>
+
+                                    </li>
+
+                                  </ul>
+                                </div>
+
+                                <b class="sub-arrow"></b>
+
+                              </li>
+
+                            </ul>
+                          </div>
+
+                          <b class="sub-arrow"></b>
+
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                      <i class="nav-icon fa fa-table"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Tables</span>
+                      </span>
+
+                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                      <!--
+                    	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    	 -->
+                    </a>
+
+                    <div class="hideable submenu collapse">
+                      <ul class="submenu-inner">
+
+                        <li class="nav-item">
+
+                          <a href="table-basic.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Basic Tables</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="table-datatables.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>DataTables</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="table-bootstrap.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Bootstrap Table</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="table-jqgrid.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>jqGrid</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                      <i class="nav-icon fa fa-edit"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Forms</span>
+                      </span>
+
+                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                      <!--
+                    	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    	 -->
+                    </a>
+
+                    <div class="hideable submenu collapse">
+                      <ul class="submenu-inner">
+
+                        <li class="nav-item">
+
+                          <a href="form-basic.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Basic Elements</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="form-more.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>More Elements</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="form-wizard.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Wizard &amp; Validation</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="form-upload.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>File Upload</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="form-wysiwyg.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Wysiwyg &amp; Markdown</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="cards.html" class="nav-link">
+                      <i class="nav-icon far fa-window-restore"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Cards</span>
+                      </span>
+
+
+                    </a>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="calendar.html" class="nav-link">
+                      <i class="nav-icon far fa-calendar-alt"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Calendar</span>
+                      <span class="badge px-1 " title="2 Urgent Events"><i class='fas fa-exclamation-triangle text-140 text-danger-m2'></i></span>
+                      </span>
+
+
+                    </a>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="gallery.html" class="nav-link">
+                      <i class="nav-icon far fa-image"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>Gallery</span>
+                      </span>
+
+
+                    </a>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+
+
+                  <li class="nav-item-caption">
+                    <span class="fadeable pl-3">OTHER</span>
+                    <span class="fadeinable mt-n2 text-125">&hellip;</span>
+                    <!--
+                    			OR something like the following (with `.hideable` text)
+                    		-->
+                    <!--
+                    			<div class="hideable">
+                    				<span class="pl-3">OTHER</span>
+                    			</div>
+                    			<span class="fadeinable mt-n2 text-125">&hellip;</span>
+                    		-->
+                  </li>
+
+
+                  <li class="nav-item">
+
+                    <a href="#" class="nav-link dropdown-toggle collapsed">
+                      <i class="nav-icon fa fa-tag"></i>
+                      <span class="nav-text fadeable">
+                    	  <span>More Pages</span>
+                      <span class="badge badge-primary py-1 radius-round text-90 mr-2px badge-sm ">5</span>
+                      </span>
+
+                      <b class="caret fa fa-angle-left rt-n90"></b>
+
+                      <!-- or you can use custom icons. first add `d-style` to 'A' -->
+                      <!--
+                    	 	<b class="caret d-n-collapsed fa fa-minus text-80"></b>
+                    	 	<b class="caret d-collapsed fa fa-plus text-80"></b>
+                    	 -->
+                    </a>
+
+                    <div class="hideable submenu collapse">
+                      <ul class="submenu-inner">
+
+                        <li class="nav-item">
+
+                          <a href="page-profile.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Profile</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-login.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Login</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-pricing.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Pricing</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-invoice.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Invoice</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-inbox.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Inbox</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-search.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Search Results</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="page-error.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Error</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+
+                        <li class="nav-item">
+
+                          <a href="starter.html" class="nav-link">
+
+                            <span class="nav-text">
+                    				  <span>Starter</span>
+                            </span>
+
+
+                          </a>
+
+
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <b class="sub-arrow"></b>
+
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+          </div><!-- /#sidebar2 -->
+
+          <div class="page-content container px-xl-5">
+            <div class="page-header text-blue-d2">
+              <h1 class="pb-0 mb-3 mb-md-0 text-140">
+                Two Menus
+              </h1>
+            </div>
+
+            <div>
+              <button type="button" class="btn btn-blue d-none d-xl-inline-block" id="id-btn-sidebar-right">
+                Move Sidebar to Right
+                <i class="fa fa-hand-point-right text-130 ml-1"></i>
+              </button>
+            </div>
+
+            <div style="height: 150vh;">
+              <!-- empty element to add scrollbars to document, to see sticky menu -->
+            </div>
+          </div><!-- /.page-content -->
+
+        </div><!-- /main -->
+      </div><!-- /.main-container -->
+
+    </div><!-- /.body-container -->
+
+    <!-- include common vendor scripts used in demo pages -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+    <!-- include vendor scripts used in "Two Menus" page. see "/views//pages/partials/two-menus-1/@vendor-scripts.hbs" -->
+
+
+    <!-- include ace.js -->
+    <script src="dist/js/ace.js"></script>
+
+
+
+    <!-- demo.js is only for Ace's demo and you shouldn't use it -->
+    <script src="app/browser/demo.html"></script>
+
+
+
+    <!-- "Two Menus" page script to enable its demo functionality -->
+    <script src="views/pages/two-menus-1/%40page-script.js"></script>
+  </body>
+
+
+<!-- Mirrored from www.xn--b3c3da.com/haclc/two-menus-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 02:08:03 GMT -->
+</html>

@@ -1,0 +1,24 @@
+@media (min-width: 1200px) {
+    .navbar-white .navbar-inner {
+        border-bottom-color: #e6eaed !important;
+    }
+}
+
+#infobox-row {
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+@media (max-width: 991.98px) {
+    #infobox-row {
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #infobox-row div[role=button] {
+        border-width: 0 !important;
+        border-radius: 0.25rem;
+        box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.075);
+    }
+}

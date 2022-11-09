@@ -1,0 +1,92 @@
+html {
+   --navbar-height: 5rem;
+   --navbar-sm-height: 3.5rem;
+}
+
+/**
+ See @page-script.js 
+*/
+#scroll-down {
+   top: 25vh;
+}
+
+
+/* if our ace.css is compiled using sticky: true, then we should make it position: fixed again to fix a few glitches */
+.navbar-fixed {
+   position: relative;
+}
+.navbar-compact {
+   height: 5rem;
+}
+
+.navbar-inner {
+   transition: height 250ms;
+}
+.navbar-compact .navbar-inner {
+   height: 3.5rem;
+}
+.navbar-fixed .navbar-inner {
+   position: fixed;
+   top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   .navbar-inner {
+      transition: none;
+   }
+}
+
+
+
+
+
+.page-intro {
+   background-repeat: no-repeat;
+   background-position: center 1.5rem;
+   background-size: 100% auto;
+   background-attachment: fixed;
+}
+
+/* change background position and size according to window size */
+@media (max-width: 1800px) {
+   .page-intro {
+      background-size: auto 480px;
+   }
+}
+@media (max-width: 1199.98px) {
+   .page-intro {
+      background-size: auto 420px;
+   }
+}
+@media (max-width: 700px) {
+   .page-intro {
+      background-position: -50vw 1rem;
+   }
+}
+@media (max-width: 450px) {
+   .page-intro {
+      background-position: -100vw 1rem;
+   }
+}
+
+
+.footer {
+   background: url('assets/image/landing/travel-footer.html') no-repeat center;
+   background-size: auto;
+   background-attachment: fixed;
+   background-position: bottom;
+}
+@media (max-width: 1000px) {
+   .footer {
+      background-size: auto 80%;
+   }
+}
+@media (max-width: 450px) {
+   .footer {
+      background-position: 60% 60%;
+      background-size: auto 100%;
+   }
+}
+
+
+
